@@ -14,6 +14,7 @@ import NameForm from './forms/NameForm';
 import EssayForm from './forms/EssayForm';
 import FlavorForm from './forms/FlavorForm';
 import Calculator from './liftingstate/Calculator';
+import SplitPane from './compositionorinheritance/SplitPane';
 const messages = ['React', 'Re: React', 'Re:Re: React'];
 const numbers = [1, 2, 3, 4, 5];
 
@@ -52,7 +53,11 @@ function App() {
         {/* <NameForm value="asdfasdf"></NameForm> */}
         {/* <EssayForm></EssayForm> */}
         {/* <FlavorForm></FlavorForm> */}
-        <Calculator></Calculator>
+        {/* <Calculator></Calculator> */}
+        <SplitPane
+          left={<div>Left Pane</div>}
+          right={<div>Right Pane</div>}
+        ></SplitPane>
       </header>
     </div>
   );
